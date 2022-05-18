@@ -1,0 +1,236 @@
+footer{
+  position: relative;
+  bottom:0;
+  box-shadow: 0px 0 50px gray;
+}
+
+@media (max-height:800px){
+	footer { position: static; }
+	header { padding-top:40px; }
+}
+
+
+.footer-distributed{
+position: relative;
+	bottom: 0;
+	background-color: #3b312b;
+	height: 440px;
+	width: 100%;
+	color: white;
+	padding: 10px;	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 50px 50px 60px 50px;
+	
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 25%;
+}
+
+
+
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+  font-size: 13px;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #f0f0f0;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 30%;
+}
+
+
+.footer-distributed .footer-center i{
+	background-color:  #f0f0f0;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	padding: 5px;
+	width: 30%;
+	float: right;
+}
+.footer-distributed .footer-box{
+	  border: 1px solid white;
+		padding: 25px;
+}
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #f0f0f0;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #f0f0f0;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color: #3b312b;
+	border-radius: 2px;
+	font-size: 20px;
+	color: #f0f0f0;
+	text-align: center;
+	line-height: 35px;
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* Here is the code for Responsive Footer */
+/* You can remove below code if you don't want Footer to be responsive */
+
+@media (max-width: 1300px) {
+  #gmap_canvas {
+    width: 35vw;
+  }
+}
+
+@media (max-width: 1100px) {
+.footer-distributed{
+  height: 1100px;
+}
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  white;
+  font-size: 15px;
+}
+
+.footer-distributed .footer-right{
+  float:none;
+  padding:0;
+}
+
+
+}
+
+@media only screen and (max-width: 963px) {
+  .footer-distributed h3{
+    font-size: 30px;
+  }
+
+  .footer-distributed .footer-links a{
+        font-size: 19px;
+  }
+
+  #gmap_canvas {
+    width: 45vw;
+  }
+}
+
+@media only screen and (max-width: 748px) {
+  .footer-distributed h3{
+    font-size: 25px;
+  }
+  .footer-distributed .footer-links a{
+        font-size: 16px;
+  }
+
+   #gmap_canvas {
+    width: 50vw;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  .footer-distributed{
+  height: 1200px;
+}
+    .footer-distributed .footer-links2 a{
+      font-size: 19px;
+    }
+      .footer-distributed .footer-links{
+        display:show;
+      }
+
+       #gmap_canvas {
+    width: 60vw;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .footer-distributed{
+  height: 1220px;
+}
+  #email{
+    font-size: 13.5px;
+  }
+}
+
+
+#email a {
+	color:white;
+	}

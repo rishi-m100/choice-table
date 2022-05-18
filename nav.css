@@ -1,0 +1,206 @@
+/*
+/* Dropdown Button 
+.dropbtn {
+  background-color: #3b312b;
+  color: white;
+  padding: 7.5px;
+  padding-left:42px;
+  padding-right:42px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  z-index: 1000000000000000;
+  width:98px;
+}
+
+/* Dropdown button on hover & focus 
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #3b312b;
+}
+
+/* The container <div> - needed to position the dropdown content 
+.dropdown {
+ 
+    position: absolute;
+    right: 10vw;
+    display: none;
+    top: 108px;
+    filter: drop-shadow(-1px 6px 3px rgb(0, 0, 0));
+    z-index: 1000000000000;
+}
+
+/* Dropdown Content (Hidden by Default) 
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #9c5c43;
+  min-width: 75px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown 
+.dropdown-content a {
+  color: black;
+  padding: 8px 11px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover 
+.dropdown-content a:hover {background-color: #a66c5e; }
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) 
+.show {display:block;}
+
+
+@media only screen and (max-width:950px) {
+  
+.dropdown {
+  display:inline-block;
+  
+}
+
+nav {
+  width:320px;
+}
+
+}
+
+*/
+
+.container {
+  display: none;
+  cursor: pointer;
+  padding-top:30px;
+  margin:10px;
+  float: right;
+  left:200px;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+@keyframes slidein {
+  from {position:relative; left:300px;};
+  to {position:relative; left:110px;};
+}
+
+
+
+
+
+
+
+ @media only screen and (max-width:950px) {
+  
+
+nav {
+  width:360px;
+}
+.links{
+ display:none;
+margin-left:67px;
+}
+
+nav ul li {
+  color:white;
+  list-style: none;
+  display:flex;
+  font-size:25px;
+  z-index:10000000000000;
+  position: relative;
+  top:0px;
+  margin-left:1%;
+  width:200px;
+}
+
+#logo {
+  top:unset;
+  height:60px;
+}
+
+.links {
+  text-align:center;
+  background-color: #3b312b;
+  min-width:150px;
+  height:8vh;
+  display: none;
+  position: relative;
+  left:110px;
+  font-size:20px;
+}
+.slide {
+  animation-name: slidein;
+  animation-duration: 3s;
+  display:block;
+}
+.container {
+  display:inline-block;
+  width: unset;
+  height: unset;
+  left: -30px;
+}
+
+ }
+
+ @media only screen and (max-width:390px) {
+  
+
+nav {
+  width:100%;
+
+ }
+.links{
+  margin-left:50px;
+}
+nav ul li {
+width:200px;
+}
+.container{
+  left:-53px;
+}
+ }
+
+  @media only screen and (max-width:350px) {
+  
+
+nav {
+  width:100%;
+
+ }
+.links{
+  margin-left:10vw;
+}
+
+nav ul li {
+width:175px;
+}
+ }
+
+ @keyframes slidein {
+  from {position:relative; left:300px;};
+  to {position:relative; left:110px;};
+}
+.slide {
+  animation-name: slidein;
+  animation-duration: 3s;
+  display:block;
+}

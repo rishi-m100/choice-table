@@ -1,0 +1,503 @@
+@import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
+* {
+font-family: 'Stoke', serif;
+}
+
+html,body{
+	overflow-x: hidden;
+	margin: 0;
+}
+body{
+	background-color: white;
+}
+nav {
+	position: absolute;
+	top: -15px;
+	right: 0;
+	background-color: #3b312b;
+	padding: 10px;
+  z-index: 100;
+	width: 800px; 
+	height: 100px;
+	margin: 0px;
+	
+	  filter: drop-shadow(-1px 6px 3px rgb(0, 0, 0));
+
+}
+nav ul li {
+	color: white;
+	list-style: none;
+	display: inline;
+	font-size: 25px;
+	z-index: 100000000;
+	position: relative;
+	top: -60px;
+  margin-left:1%;
+}
+nav ul li a:hover{
+	color:  #cf936d;
+	cursor: pointer;
+	transition: .15s;
+}
+nav ul li:hover{
+	color:  #cf936d;
+	cursor: pointer;
+	transition: .15s;
+}
+
+.links {
+  text-decoration: none;
+  color: white;
+  margin-left:25px;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("https://www.theranch.com/img/hero/rooms/restaurant-main-slider-v2.jpg");
+    filter: blur(6px);
+  -webkit-filter: blur(6px);
+  width: 100%;
+  /* Set a specific height */
+  min-height: 700px; 
+  position: relative;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+		z-index: -10000000;
+
+}
+
+#text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+	color: white;
+	z-index: 1;
+}
+#mock_review span {
+  font-size: 20px;
+}
+#b_enchilada {
+	padding-top: 10%;
+  margin: 5%;
+  padding: 5%;
+  border-style:double;
+  border-color: #803f30;
+  border-width: 5px;
+  height: 475px;
+}
+.s_enchilada{
+  width: 20%;
+  min-height: 400px;
+  padding: 5%;
+  margin-left: 2.5%;
+  transition: trasform 0.3s;
+  transition-duration: 0.3s;
+  transition-delay: 0s;
+  transition-timing-function: ease;
+  transition-property: transform;
+  float:left;
+}
+#enchilada_1 {
+  background-color: #ac978d;
+	  box-shadow: 5px 0 5px 0 black;
+		border-radius: 20px;
+
+	
+}#enchilada_2 {
+  background-color: #a66c5e;
+	  box-shadow: 5px 0 5px 0 black;
+		border-radius: 20px;
+
+}
+#enchilada_3 {
+  background-color: #9c5c43;
+	  box-shadow: 5px 0 5px 0 black;
+		border-radius: 20px;
+}
+.s_enchilada:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 5px 0 black;
+  cursor: pointer;
+}
+
+#big_enchilada:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+
+#logo{ 
+	height: 100px;
+	padding: 10px;
+	position: relative;
+	top: 53px;
+  margin-left: -10px;
+	cursor: pointer;
+	border: 5px solid brown; 
+}
+
+
+
+
+
+
+@keyframes stars1 {
+  0% {
+		color: black;
+  }
+  70% {
+		color: #d4af37;
+  }
+}
+
+
+@keyframes stars2 {
+  0% {
+		color: black;
+  }
+  70% {
+		color: #d4af37;
+  }
+}
+
+
+@keyframes stars3 {
+  0% {
+		color: black;
+  }
+  70% {
+		color: #d4af37;
+  }
+}
+
+
+@keyframes stars4 {
+  0% {
+		color: black;
+  }
+  70% {
+		color: #d4af37;
+  }
+}
+
+
+@keyframes stars5 {
+  0% {
+		color: black;
+  }
+  70% {
+		color: #d4af37;
+  }
+}
+
+
+
+
+
+/* Make the effect apply one star at a
+   time. Limiting the selector to when
+   .rate is hovered removes the effect
+   without delay when cursor leaves
+   the .rate area. */
+.rate{
+
+}
+
+.rate i:nth-child(1) {
+  animation-name: stars1;
+	animation-duration: 1s;
+	
+	color: #d4af37;
+}
+.rate i:nth-child(2) {
+  animation-name: stars2;
+	animation-duration: 2s;
+	color: #d4af37;
+}
+.rate i:nth-child(3) {
+   animation-name: stars3;
+	animation-duration: 3s;
+	color: #d4af37;
+}
+.rate i:nth-child(4) {
+   animation-name: stars4;
+	animation-duration: 4s;
+	color: #d4af37;
+}
+.rate i:nth-child(5) {
+   animation-name: stars5;
+	animation-duration: 5s;
+	color: #d4af37;
+}
+
+
+/* Miscellaneous styles. */
+.rate i {
+  font-style: normal;
+	font-size: 70px;
+}
+
+
+#block div{
+	display: inline;
+}
+
+
+
+.typewriter {
+	display: inline-block;
+
+}
+
+.typewriter-text {
+  	overflow: hidden;
+  	letter-spacing: 2px;
+ 	  animation: typing 1.8s steps(30, end), blink .75s step-end infinite;
+    white-space: nowrap;
+    border-right: 2px solid white;
+    font-weight: bold;
+		width: 430px
+}
+
+@keyframes typing {
+    from { 
+        width: 0% 
+    }
+    to { 
+        width: 430px;
+    }
+}
+
+@keyframes blink {
+    from, to { 
+        border-color: transparent 
+    }
+    50% { 
+        border-color: white; 
+    }
+}
+
+
+
+
+
+/*footer{
+	position: relative;
+	bottom: 0;
+	background-color: #3b312b;
+	height: 340px;
+	width: 100%;
+	color: white;
+	padding: 10px;
+}
+
+#footer-left h1{
+	font-size: 40px;
+	font-style: italic;
+	color: #80929b;
+	text-decoration: underline;
+}
+*/
+#footer-img{ 
+	height: 120px;
+	cursor: pointer;
+	padding: 10px;
+	border: 5px solid brown; 
+}
+
+
+#copyright{
+	font-size: 10px;
+}
+
+
+
+
+#spacer{
+	margin-top: -1%;
+
+
+}
+
+
+#inv{
+	visibility: hidden;
+}
+
+
+
+
+
+
+
+.container2 {
+       width: 300px;
+       height: 270px;
+       position: relative;
+			 padding-top: 30px;
+			 display: inline-block;
+			 margin: 10px;
+    }
+    .tag {
+       float: left;
+       position: absolute;
+       left: 0px;
+       top: 0px;
+       z-index: 1000;
+       background-color: #1ca7c6;
+       padding: 5px;
+       color: #FFFFFF;
+       font-weight: bold;
+    }
+
+		.feat_img{
+			width: auto;
+       height: 160px;
+		}
+
+		.feat_desc{
+			
+		}
+
+
+		button{
+			background-color: #3b312b;
+			color: #d2c8be;
+			transition: .6s;
+			width: 150px;
+			height: 50px;
+			border: none;
+			outline: none;
+			padding: 10px;
+		}
+
+		button:hover{
+			background-color: #d2c8be;
+			color: #3b312b;
+			transition: .6s;
+			cursor: pointer;
+		}
+/*
+	.welcomescreen{
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 86%, 0 100%);
+  clip-path: polygon(0 0, 100% 40%, 100% 100%, 0 100%);
+  height: auto;
+  width: 100%;
+	opacity: 0.2;
+}
+*/
+
+#rest{
+    background-image: url("paper_2.png");
+    
+}
+
+
+@media screen and (max-width: 1070px) {
+
+.s_enchilada{
+  width:35%;
+  height: 300px;
+  display: inline-flex;
+  float:none;
+  margin:1.5%;
+}
+
+#b_enchilada {
+  height: unset;
+}
+
+}
+
+@media screen and (max-width: 670px) {
+
+.s_enchilada{
+  width:67%;
+  height: 300px;
+  display: inline-flex;
+  float:none;
+  margin:1.5%;
+}
+
+#b_enchilada {
+  height: unset;
+}
+
+}
+
+
+
+@media screen and (max-width: 470px) {
+
+#text{
+	font-size: 15px;
+}
+
+
+.typewriter-text {
+font-size: 10px;
+    width: 280px;
+}
+
+
+
+@keyframes typing {
+    from { 
+        width: 0% 
+    }
+    to { 
+        width: 280px;
+    }
+}
+
+
+.rate i{
+	font-size: 40px;
+}
+
+
+.s_enchilada{
+  width:80%;
+  height: 300px;
+  display: inline-flex;
+  float:none;
+  margin:1.5%;
+}
+
+#b_enchilada {
+  height: unset;
+}
+
+}
+
+#tweets{
+	width: 50%;
+	background-image: url(paper_2.png);
+	margin: 30px;
+}
+
+
+
+#insta{
+	padding: 28px;
+}
+
+
+@media screen and (max-width: 380px) {
+#insta{
+	padding: 0px;
+}
+
+}
+
+.instagram-media{
+min-width:245px; 
+
+}
+
